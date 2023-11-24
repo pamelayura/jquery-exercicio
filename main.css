@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+form {
+    background-color: #e7d8ca9d;
+    padding: 24px 0;
+    text-align: center;
+}
+
+form h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input, button {
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+input {
+    width: 40%;
+}
+
+button {
+    background-color: #e27e0cbe;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #ff8800;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    list-style: square;
+}
+
+ul li {
+    padding: 8px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+li :hover {
+    cursor: pointer;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
