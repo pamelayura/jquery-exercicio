@@ -60,6 +60,3 @@ li :hover {
     cursor: pointer;
 }
 
-ul li.checked {
-    text-decoration: line-through;
-}

@@ -1,14 +1,24 @@
+let listaTarefa = $("#lista-tarefa");
+
 $(document).ready(function() {
 
-    $('.add').click(function () {
+    $('.add').click(function (e) {
 
-        const novaTarefa = $('.input').val();
-        const novaTarefaAdd = $('<li></li>');
-        $(`<input type="${novaTarefa}" />`).appendTo(novaTarefaAdd);
+        e.preventDefault();
+
+        const novaTarefa = $('#nova-tarefa').val();
+
+        let linha = '<li>' + novaTarefa + '</li>';
+
+        $(linha).appendTo(listaTarefa);
+
+        $(this).css("list-style", "square");
+
+        $('#nova-tarefa').val('');
     })
 
-    $('novaTarefaAdd').appendTo('ul'); 
+    $("ul").on("click", "li", function() {
 
+        $(this).css("text-decoration", "line-through");
+    })
 }) 
-
-    $('.task').css("text-decoration", "line-through");main.js
